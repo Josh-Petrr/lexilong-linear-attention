@@ -1,0 +1,68 @@
+{
+  "attn": "linformer",
+  "params": 5224706,
+  "test_acc": 0.80204,
+  "test_f1": 0.80527247688373,
+  "best_val_acc": 0.8168,
+  "train_time_s": 199.4779360294342,
+  "mean_epoch_time_s": 38.70323324203491,
+  "peak_train_mem_mb": 693.9560546875,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5856867337768729,
+      "val_acc": 0.7764,
+      "val_f1": 0.7432246210381258,
+      "epoch_time_s": 39.798502683639526
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3633292440579019,
+      "val_acc": 0.8168,
+      "val_f1": 0.8175298804780876,
+      "epoch_time_s": 40.82464814186096
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.15508726085218685,
+      "val_acc": 0.7908,
+      "val_f1": 0.7902125952667469,
+      "epoch_time_s": 37.73461651802063
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.05792104865064506,
+      "val_acc": 0.7808,
+      "val_f1": 0.7793880837359098,
+      "epoch_time_s": 37.618372201919556
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.03211130547887561,
+      "val_acc": 0.7772,
+      "val_f1": 0.7771108443377351,
+      "epoch_time_s": 37.54002666473389
+    }
+  ],
+  "args": {
+    "attn": "linformer",
+    "max_len": 512,
+    "epochs": 5,
+    "batch_size": 32,
+    "lr": 0.0005,
+    "weight_decay": 0.01,
+    "d_model": 128,
+    "n_layers": 4,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "seed": 42,
+    "no_amp": false
+  },
+  "data_stats": {
+    "test_len_mean": 290.7585144042969,
+    "test_len_median": 219.0,
+    "test_len_p90": 565.0,
+    "test_frac_truncated": 0.12343999743461609
+  },
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+}

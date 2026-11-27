@@ -1,0 +1,11 @@
+torch>=2.3
+transformers>=4.45
+datasets>=3.0
+scikit-learn
+pandas
+numpy
+matplotlib
+tqdm
+gradio>=4.44
+notebook
+ipykernel

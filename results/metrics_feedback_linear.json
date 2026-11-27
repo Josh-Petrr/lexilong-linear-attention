@@ -1,0 +1,83 @@
+{
+  "attn": "linear",
+  "dataset": "feedback",
+  "params": 4700418,
+  "test_acc": 0.8622,
+  "test_f1": 0.8603170741596724,
+  "tests": {
+    "imdb": {
+      "acc": 0.8622,
+      "f1": 0.8603170741596724,
+      "n": 25000
+    },
+    "yelp": {
+      "acc": 0.9219,
+      "f1": 0.9208953712144232,
+      "n": 10000
+    }
+  },
+  "best_val_acc": 0.888,
+  "train_time_s": 398.98258090019226,
+  "mean_epoch_time_s": 97.5021378993988,
+  "peak_train_mem_mb": 559.6123046875,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.42540109805912596,
+      "val_acc": 0.8666,
+      "val_f1": 0.863627070128808,
+      "epoch_time_s": 98.03849077224731
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.26049183807599696,
+      "val_acc": 0.8816,
+      "val_f1": 0.8758909853249476,
+      "epoch_time_s": 97.33900117874146
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.2233527808891136,
+      "val_acc": 0.8864,
+      "val_f1": 0.8819617622610141,
+      "epoch_time_s": 96.64546966552734
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.20640148110755838,
+      "val_acc": 0.888,
+      "val_f1": 0.88463123197363,
+      "epoch_time_s": 97.9855899810791
+    }
+  ],
+  "args": {
+    "attn": "linear",
+    "dataset": "feedback",
+    "max_len": 512,
+    "epochs": 4,
+    "batch_size": 32,
+    "lr": 0.0005,
+    "weight_decay": 0.01,
+    "d_model": 128,
+    "n_layers": 4,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "seed": 42,
+    "no_amp": false
+  },
+  "data_stats": {
+    "imdb": {
+      "len_mean": 290.7585144042969,
+      "len_median": 219.0,
+      "len_p90": 565.0,
+      "frac_truncated": 0.12343999743461609
+    },
+    "yelp": {
+      "len_mean": 173.73370361328125,
+      "len_median": 128.0,
+      "len_p90": 367.0,
+      "frac_truncated": 0.0414000004529953
+    }
+  },
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+}

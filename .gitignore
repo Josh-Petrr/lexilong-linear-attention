@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+data_cache/
+.gradio/
+.venv/
+venv/
+# Checkpoints are ~20-30 MB each; uncomment the next line if you'd rather not commit them.
+# checkpoints/
+results/app_log.txt
